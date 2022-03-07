@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.</title>
+</head>
+<body>
+<script>
+    function change(a,b) {
+        let c = a
+        a = b
+        b = c
+        return [a,b]
+    }
+    let inputa = prompt('Enter with a number')
+    let inputb = prompt('Enter with b number')
+    let changeAB = change(inputa,inputb)
+    document.write('result:', changeAB)
+</script>
+
+</body>
+</html>

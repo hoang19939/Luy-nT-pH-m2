@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.</title>
+</head>
+<body>
+<script>
+    // function factorial(number) {
+    //     let result = 1
+    //     for (let i = 1 ; i <= number ; i++) {
+    //          result = result * i;
+    //
+    //     }return result;
+    //
+    // }
+    // let inputnumber = prompt("Enter with a number");
+    // let factorialNumber = factorial(inputnumber);
+    // document.write('factorial is:', factorialNumber);
+
+
+    //    cách 2 dùng hàm Đệ Quy (recursive function)
+    function factorial(number) {
+        if (number === 0) {
+            return 1
+        }
+        return number * factorial(number - 1)
+    }
+    let inputNumber = prompt('Enter with number')
+    let result = factorial(inputNumber)
+    document.write('giai thừa bằng:', result)
+</script>
+
+</body>
+</html>

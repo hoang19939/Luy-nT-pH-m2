@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong
+        mảng không. Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1. </title>
+</head>
+<body>
+<script>
+    function check(arr, char) {
+        let max = arr.length
+        let count = 0;
+        for (let i = 0; i <= max; i++) {
+            if (arr[i] === char) {
+                count++
+            }
+        }
+        if (count === 0) {
+            count = -1
+        } else {
+            return count
+        }
+    }
+
+    let inputarr = ['a', 'b', 'r', 1, 5, 7, 2, 'y', 1, 'a']
+    let resultcheck = check(inputarr,'1')
+    document.write('ký tự xuất hiện trọng mảng:', resultcheck + 'lần')
+</script>
+
+</body>
+</html>

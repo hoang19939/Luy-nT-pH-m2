@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.</title>
+</head>
+<body>
+
+<script>
+    function reverse(arr) {
+        let first = 0
+        let last = arr.length - 1
+        let TG
+        for (let i = first; i <= last; i++) {
+            TG = arr[first];
+            arr[first]= arr[last]
+            arr[last] = TG
+            first++
+            last--
+        }return arr
+    }
+    let arr1 = [1, 22, 33, 1, 32, 6, 10, 8, 9]
+    let result = reverse(arr1)
+    document.write(result.join())
+</script>
+
+</body>
+</html>
